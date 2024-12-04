@@ -17,3 +17,12 @@ example:
 Enter a number: 4
 4 8 12 16 20 24 28 32 36 40 44 48
 """
+pasta = int(input("enter a number(integer) "))
+antipasto = pasta
+
+while antipasto != pasta*13:
+    print(antipasto , end=' ')
+    antipasto = antipasto + pasta
+
+if pasta == 0:
+    print("ok any integer except 0 plz")

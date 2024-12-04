@@ -30,3 +30,18 @@ Enter password: 1234
 Access denied
 Too many failed attempts. Access denied.
 """
+doomclock = 0
+username = ""
+password = ""
+while doomclock != 3:
+    doomclock = doomclock + 1
+    if username != "admin" or password != "12345":
+        username = input("what is the username ")
+        password = input("what is the password ")
+        if username != "admin" or password != "12345":
+            print("access denied")
+        elif username == "admin" and password == "12345":
+            print("access granted")
+            exit()
+
+print("Too many failed attempts. Access denied!")

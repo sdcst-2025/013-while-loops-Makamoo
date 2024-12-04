@@ -25,3 +25,11 @@ Example:
 10
 ...
 """
+
+gumbo = 0
+
+while gumbo != 20:
+    print(gumbo)
+    gumbo = gumbo + 2
+
+print(gumbo)

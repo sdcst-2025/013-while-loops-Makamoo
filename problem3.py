@@ -13,3 +13,14 @@ after the number in the sequence is greater than 100:
 Example:
 1 1 2 3 5 ...
 """
+
+Cheese = 1
+Pepper = 1
+print(Pepper , end=' ')
+
+while Cheese <= 100 or Pepper <= 100:
+    print(Cheese , end=' ')
+    Pepper = Pepper + Cheese
+    if Cheese <= 100 or Pepper <= 100:
+        print(Pepper, end=' ')
+        Cheese = Cheese + Pepper
